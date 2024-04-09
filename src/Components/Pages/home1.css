@@ -1,0 +1,35 @@
+.glass {
+  margin-top: 50px;
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.glass div {
+  height: auto;
+  margin: 40px;
+}
+
+.glass-left {
+  flex-basis: 600px;
+}
+
+.glass-right {
+  flex: 2;
+}
+
+.img2 {
+  width: 100%;
+  height: auto;
+}
+
+.glass-right h1 {
+  font-size: 3.5rem;
+}
+.glass-right p {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.glass-right a {
+  font-size: 1.3rem;
+}

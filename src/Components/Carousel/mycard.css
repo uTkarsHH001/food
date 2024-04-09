@@ -1,0 +1,9 @@
+.card {
+  height: 350px;
+  min-width: 300px;
+  max-width: 300px;
+  background-color: rgb(109, 108, 119);
+  margin: 10px;
+  border-radius: 15px;
+  text-align: center;
+}

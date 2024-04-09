@@ -1,0 +1,137 @@
+.row {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-flow: wrap;
+  transition: all 0.2s linear;
+}
+
+.row div {
+  flex: 2 1 500px;
+}
+
+.child-left {
+  height: auto;
+  margin: 30px;
+}
+
+.child-left h2 {
+  padding-left: 40px;
+  font-size: 5rem;
+}
+
+.child-left p {
+  text-align: justify;
+  padding: 0 40px;
+  font-size: 1.3rem;
+  overflow: hidden;
+}
+
+/* .child-right {
+  flex: 1 1 550px;
+} */
+.img-fluid {
+  width: 100%;
+  mix-blend-mode: multiply;
+  height: auto;
+}
+
+.comic-button {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2.5rem;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5252;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
+}
+
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+/* 
+Card css
+
+
+
+ */
+.card1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 20px;
+  cursor: pointer;
+}
+.cards {
+  border-radius: 20px;
+  flex: 1 1 300px;
+  margin: 20px;
+  transition: all ease 0.5s;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-shadow: rgba(66, 62, 67, 0.56) 0px 22px 70px 4px;
+  padding-bottom: 15px;
+}
+.cards:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+}
+.cards img {
+  mix-blend-mode: multiply;
+}
+/* 
+
+glass
+
+ */
+/* 
+
+
+media Queery
+ */
+
+@media screen and (max-width: 740px) {
+  .child-lfet,
+  .child-right {
+    height: auto;
+  }
+
+  .child-left h2 {
+    padding-left: 10px;
+    font-size: 3rem;
+  }
+
+  .child-left p {
+    text-align: justify;
+    padding: 0 10px;
+    font-size: 1.1rem;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .child-lfet,
+  .child-right {
+    height: auto;
+  }
+}

@@ -1,0 +1,91 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list ul li a {
+  font-size: 22px;
+  text-decoration: none;
+  line-height: 80px;
+  margin: 0 45px;
+  color: black;
+}
+.new {
+  display: none;
+  height: 60px;
+  margin-top: 10px;
+  margin-right: 70px;
+}
+.logo {
+  height: 70px;
+  padding: 0 1rem;
+}
+#click {
+  display: none;
+}
+#checkbtn {
+  font-size: 25px;
+  float: right;
+  line-height: 80px;
+  margin-right: 35px;
+  display: none;
+  cursor: pointer;
+}
+/* 
+
+
+
+
+
+
+
+ */
+
+@media (max-width: 1070px) {
+  .logo {
+    display: none;
+  }
+  .new {
+    display: block;
+    margin-left: 30px;
+    float: left;
+  }
+  #checkbtn {
+    display: block;
+  }
+
+  .list ul {
+    position: absolute;
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    left: -100%;
+    top: 75px;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ .container .list ul {
+    left: 0;
+  }
+
+  .list ul li {
+    display: block;
+  }
+  .list ul li a {
+    font-size: 25px;
+    color: white;
+  }
+}
